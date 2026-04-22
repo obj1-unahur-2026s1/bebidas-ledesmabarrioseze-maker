@@ -1,0 +1,24 @@
+import Tito.*
+import Bebidas.*
+
+describe "Tests de rendimiento de tito" {
+
+    test "tito tomando 2 de whisky rinde a una velocidad de 5.67" {
+        
+        tito.consumir(2, whisky)
+        assert.equals(5.67, tito.velocidad())
+    }
+
+    test "tito tomando 15 de terere rinde a una velocidad de 10.5" {
+        
+        tito.consumir(15, terere)
+        assert.equals(10.5, tito.velocidad())
+    }
+
+    test "tito tomando Cianuro siempre tiene velocidad cero" {
+
+        tito.consumir(50, cianuro)
+        assert.equals(0, tito.velocidad())
+    }
+}
+
