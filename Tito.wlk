@@ -11,14 +11,11 @@ object tito {
     }
 
     method consumir(unaCantidad, unaBebida){
-
         cantidadConsumida = unaCantidad
         bebida = unaBebida
     }
 
     method velocidad(){
-
-       return (bebida.rendimiento(cantidadConsumida) * 490)/ self.peso()
-
+        return (bebida.rendimiento(cantidadConsumida) * 490) / self.peso()
     }
-}
+} 
